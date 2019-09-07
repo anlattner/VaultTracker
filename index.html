@@ -1,30 +1,56 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
+		<title>CRACK THAT VAULT</title>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Kanit:400,900|Roboto&display=swap" rel="stylesheet">
+		<script>
+		function myFunction(x) {
+			if(x == 'Left')
+			{
+				var antdiv = document.createElement("div");
+				antdiv.className="ant"
+				antdiv.innerHTML = "ANT";
+				document.getElementById("Stairs").appendChild(antdiv);
+			}
+			else if(x == 'Right')
+			{
+				var pendiv = document.createElement("div");
+				pendiv.className="pen"
+				pendiv.innerHTML = "PEN";
+				document.getElementById("Stairs").appendChild(pendiv);
+			}
+
+		}
+		</script>
 	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
+	<body class="cool">
 		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
+    		<h1 class="cool">VAULT TRACKER</h1>
+			<p>Making your tracking of what keys are for the vault event easier!</p>
+			<div id = "Stairs">
+				<h1>Stairs</h1>
+				<div class="btn-group">
+					<button class = "buttonleft" onclick="myFunction('Left')">Left</button>
+					<button class = "buttonright" onclick="myFunction('Right')">Right</button>
+				</div>
+			</div>
+			<div id = "Trees">
+				<h1>Trees</h1>
+				<div class="btn-group">
+					<button class = "buttonleft" onclick="myFunction()">Left</button>
+					<button class = "buttonright" onclick="myFunction()">Right</button>
+				</div>
+			</div>
+			<div id = "Rocks">
+				<h1>Rocks</h1>
+				<div class="btn-group">
+					<button class = "buttonleft" onclick="myFunction()">Left</button>
+					<button class = "buttonright" onclick="myFunction()">Right</button>
+				</div>
+			</div>
 		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
 	</body>
 </html>
+
