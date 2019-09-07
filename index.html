@@ -4,22 +4,54 @@
 		<title>CRACK THAT VAULT</title>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link href="https://fonts.googleapis.com/css?family=Kanit:400,900|Roboto&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Kanit:400,900|Roboto:400,900&display=swap" rel="stylesheet">
 		<script>
-		function myFunction(x) {
-			if(x == 'Left')
+		function stairsfunc(x) {
+			if(x == 'Right')
 			{
 				var antdiv = document.createElement("div");
 				antdiv.className="ant"
-				antdiv.innerHTML = "ANT";
-				document.getElementById("Stairs").appendChild(antdiv);
+				antdiv.innerHTML = "ANTUMBRA";
+				document.getElementById("stairs").appendChild(antdiv);
 			}
-			else if(x == 'Right')
+			else if(x == 'Left')
 			{
 				var pendiv = document.createElement("div");
 				pendiv.className="pen"
-				pendiv.innerHTML = "PEN";
-				document.getElementById("Stairs").appendChild(pendiv);
+				pendiv.innerHTML = "PENUMBRA";
+				document.getElementById("stairs").appendChild(pendiv);
+			}
+		}
+			function treesfunc(x) {
+			if(x == 'Right')
+			{
+				var antdiv = document.createElement("div");
+				antdiv.className="ant"
+				antdiv.innerHTML = "ANTUMBRA";
+				document.getElementById("trees").appendChild(antdiv);
+			}
+			else if(x == 'Left')
+			{
+				var pendiv = document.createElement("div");
+				pendiv.className="pen"
+				pendiv.innerHTML = "PENUMBRA";
+				document.getElementById("trees").appendChild(pendiv);
+			}
+		}
+			function rockfunc(x) {
+			if(x == 'Right')
+			{
+				var antdiv = document.createElement("div");
+				antdiv.className="ant"
+				antdiv.innerHTML = "ANTUMBRA";
+				document.getElementById("rocks").appendChild(antdiv);
+			}
+			else if(x == 'Left')
+			{
+				var pendiv = document.createElement("div");
+				pendiv.className="pen"
+				pendiv.innerHTML = "PENUMBRA";
+				document.getElementById("rocks").appendChild(pendiv);
 			}
 
 		}
@@ -29,25 +61,25 @@
 		<div class="container">
     		<h1 class="cool">VAULT TRACKER</h1>
 			<p>Making your tracking of what keys are for the vault event easier!</p>
-			<div id = "Stairs">
-				<h1>Stairs</h1>
+			<div id = "stairs">
+				<h1 class="bold">Stairs</h1>
 				<div class="btn-group">
-					<button class = "buttonleft" onclick="myFunction('Left')">Left</button>
-					<button class = "buttonright" onclick="myFunction('Right')">Right</button>
+					<button class = "buttonleft" onclick="stairsfunc('Left')">Left</button>
+					<button class = "buttonright" onclick="stairsfunc('Right')">Right</button>
 				</div>
 			</div>
-			<div id = "Trees">
-				<h1>Trees</h1>
+			<div id="trees">
+				<h1 class="bold">Trees</h1>
 				<div class="btn-group">
-					<button class = "buttonleft" onclick="myFunction()">Left</button>
-					<button class = "buttonright" onclick="myFunction()">Right</button>
+					<button class = "buttonleft" onclick="treesfunc('Left')">Left</button>
+					<button class = "buttonright" onclick="treesfunc('Right')">Right</button>
 				</div>
 			</div>
-			<div id = "Rocks">
-				<h1>Rocks</h1>
+			<div id = "rocks">
+				<h1 class="bold">Rocks</h1>
 				<div class="btn-group">
-					<button class = "buttonleft" onclick="myFunction()">Left</button>
-					<button class = "buttonright" onclick="myFunction()">Right</button>
+					<button class = "buttonleft" onclick="rockfunc('Left')">Left</button>
+					<button class = "buttonright" onclick="rockfunc('Right')">Right</button>
 				</div>
 			</div>
 		</div><!-- /.container -->
