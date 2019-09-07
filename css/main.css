@@ -1,6 +1,6 @@
 body {
     margin: 60px auto;
-    width: 70%;
+    width: 90%;
 }
 
 p {
@@ -21,14 +21,35 @@ p {
     overflow:hidden ; /* minds inside and outside floatting elements, fine if no size given */
 }
 
+.defaultdiv {
+    overflow:hidden ; /* minds inside and outside floatting elements, fine if no size given */
+}
+
+h1{
+  font-family: "Roboto", sans-serif;
+  margin: 10px;
+  text-align: left;
+}
+
 h1.cool {
   font-family: "Kanit", sans-serif;
-  font-size: 8.75vw;
+  font-size: 10vw;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   margin: auto;
 }
+
+h1.bold {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 5vw;
+  font-weight: 900;
+  margin: 10px;
+  text-align: left;
+  margin: auto;
+}
+
 
 .btn-group .buttonleft {
   background-color: #e7e7e7; color: black; /* Green */
@@ -37,14 +58,18 @@ h1.cool {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 32px;
   cursor: pointer;
   float: left;
   width: 50%;
+  z-index: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
 }
 
 .btn-group .buttonleft:hover {
-  background-color: #3e8e41;
+  background-color: #4CAF50;
 }
 
 .btn-group .buttonright {
@@ -54,38 +79,55 @@ h1.cool {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 32px;
   cursor: pointer;
   float: left;
   width: 50%;
+  z-index: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
 }
 
 .btn-group .buttonright:hover {
-  background-color: #b30000;
+  background-color: #f44336;
 }
 
 .btn-group .button:not(:last-child) {
   border-right: none; /* Prevent double borders */
 }
 
-.ant{
+.pen{
   background-color: #4CAF50; /* Green */
   border: 1px solid green;
-  padding: 15px 32px;
+  padding: 32px 64px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  width: 100%
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  width: 86.9%;
+  z-index: 2;
+  position: relative;
+  top: 0px;
+  left: 0px;
 }
 
-.pen{
-  background-color: #f44336; /* Green */
+.ant{
+  background-color: #f44336; /* Red */
   border: 1px solid green;
-  padding: 15px 32px;
+  padding: 32px 64px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  width: 100%
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  width: 86.9%;
+  z-index: 2;
+  position: relative;
+  top: 0px;
+  left: 0px;
 }
+
