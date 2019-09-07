@@ -2,42 +2,90 @@ body {
     margin: 60px auto;
     width: 70%;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
+
 p {
-    font-size: 1.5em;
-    line-height: 1.4em;
+    font-family: 'Roboto', sans-serif;
     color: #333;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+
+.cool {
+  font-family: 'Heebo', 'Sans-Serif';
+  background-image:url("http://bg2.cool/patterns/random/roses.gif");
+  background-size: 50%;
+  background-position: center
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+.container {
+    background-color: #ffffff;
+    padding: 10px;
+    overflow:hidden ; /* minds inside and outside floatting elements, fine if no size given */
 }
 
-ul.posts li {
-    list-style: none;
+h1.cool {
+  font-family: "Kanit", sans-serif;
+  font-size: 8.75vw;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: auto;
+}
+
+.btn-group .buttonleft {
+  background-color: #e7e7e7; color: black; /* Green */
+  border: 1px solid black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+  width: 50%;
+}
+
+.btn-group .buttonleft:hover {
+  background-color: #3e8e41;
+}
+
+.btn-group .buttonright {
+  background-color: #e7e7e7; color: black; /* Green */
+  border: 1px solid black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+  width: 50%;
+}
+
+.btn-group .buttonright:hover {
+  background-color: #b30000;
+}
+
+.btn-group .button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.ant{
+  background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%
+}
+
+.pen{
+  background-color: #f44336; /* Green */
+  border: 1px solid green;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%
 }
