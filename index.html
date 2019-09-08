@@ -4,102 +4,90 @@
 		<title>CRACK THAT VAULT</title>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link href="https://fonts.googleapis.com/css?family=Kanit:400,900|Roboto:400,900&display=swap" rel="stylesheet">
 
-		<!-- Comment out one of the below options to utilize bootstrap-->
+		<link href="https://fonts.googleapis.com/css?family=Kanit:400,900&display=swap" rel="stylesheet">
 
-		<!-- link for local copies of Bootstrap
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		-->
-
-		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		
-
-		<script>
-		function stairsfunc(x) {
-			if(x == 'Right')
-			{
-				var antdiv = document.createElement("div");
-				antdiv.className="ant"
-				antdiv.innerHTML = "ANTUMBRA";
-				document.getElementById("stairs").appendChild(antdiv);
-			}
-			else if(x == 'Left')
-			{
-				var pendiv = document.createElement("div");
-				pendiv.className="pen"
-				pendiv.innerHTML = "PENUMBRA";
-				document.getElementById("stairs").appendChild(pendiv);
-			}
-		}
-			function treesfunc(x) {
-			if(x == 'Right')
-			{
-				var antdiv = document.createElement("div");
-				antdiv.className="ant"
-				antdiv.innerHTML = "ANTUMBRA";
-				document.getElementById("trees").appendChild(antdiv);
-			}
-			else if(x == 'Left')
-			{
-				var pendiv = document.createElement("div");
-				pendiv.className="pen"
-				pendiv.innerHTML = "PENUMBRA";
-				document.getElementById("trees").appendChild(pendiv);
-			}
-		}
-			function rockfunc(x) {
-			if(x == 'Right')
-			{
-				var antdiv = document.createElement("div");
-				antdiv.className="ant"
-				antdiv.innerHTML = "ANTUMBRA";
-				document.getElementById("rocks").appendChild(antdiv);
-			}
-			else if(x == 'Left')
-			{
-				var pendiv = document.createElement("div");
-				pendiv.className="pen"
-				pendiv.innerHTML = "PENUMBRA";
-				document.getElementById("rocks").appendChild(pendiv);
-			}
-
-		}
-		</script>
 
 	</head>
-	<body class="cool">
-		<div class="container">
-    		<h1 class="cool">VAULT TRACKER</h1>
-			<p>Making your tracking of what keys are for the vault event easier!</p>
-			<div id = "stairs">
-				<h1 class="bold">Stairs</h1>
-				<div class="btn-group">
-					<button class = "buttonleft" onclick="stairsfunc('Left')">Left</button>
-					<button class = "buttonright" onclick="stairsfunc('Right')">Right</button>
-				</div> <!-- #stairs -->
-			</div>
-			<div id="trees">
-				<h1 class="bold">Trees</h1>
-				<div class="btn-group">
-					<button class = "buttonleft" onclick="treesfunc('Left')">Left</button>
-					<button class = "buttonright" onclick="treesfunc('Right')">Right</button>
-				</div> <!-- #trees -->
-			</div>
-			<div id = "rocks">
-				<h1 class="bold">Rocks</h1>
-				<div class="btn-group">
-					<button class = "buttonleft" onclick="rockfunc('Left')">Left</button>
-					<button class = "buttonright" onclick="rockfunc('Right')">Right</button>
-				</div> <!-- #rocks -->
-			</div>
-		</div><!-- /.container -->
+	<body>
+		<header class="page-header header container-fluid">
+			<div class="overlay">
+				<div class="description">
+					<h1 class="cool" >VAULT TRACKER</h1>
+					<p>Gone are the days of scribbling on paper or using microsoft paint! No longer do you have to remember if Right is Ant or Pen, even though you've ran the raid dozens of times! Hit the buttons and don't worry about it</p>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-12" id="stairbutton" >
+						<h3 class="feature-title">Stairs</h3>
+						<div class="btn-group btn-group-toggle d-flex">
+							<button class="btn btn-success w-100" type="button" data-toggle="collapse" data-target="#stairspen">LEFT</button>
+							 <button class="btn btn-danger w-100" type="button" data-toggle="collapse" data-target="#stairsant">RIGHT</button>
+						</div>
+						<div class="accordian-group">
+							<div class="collapse indent" id="stairspen" data-parent="#stairbutton">
+								<div class="card card-body"> 
+					            	PENUMBRA
+				            	</div>
+					        </div>
+							<div class="collapse indent" id="stairsant" data-parent="#stairbutton">
+								<div class="card card-body"> 
+					            	ANTUMBRA
+				            	</div>
+					        </div>
+				        </div>
+		      		</div>
 
-		<!-- JQuery for Bootstrap -->
+		      		<div class="col-lg-4 col-md-4 col-sm-12" id="treebutton" >
+						<h3 class="feature-title">Trees</h3>
+						<div class="btn-group btn-group-toggle d-flex">
+							<button class="btn btn-success w-100" type="button" data-toggle="collapse" data-target="#treepen">LEFT</button>
+							 <button class="btn btn-danger w-100" type="button" data-toggle="collapse" data-target="#treeant">RIGHT</button>
+						</div>
+						<div class="accordian-group">
+							<div class="collapse indent" id="treepen" data-parent="#treebutton">
+								<div class="card card-body"> 
+					            	PENUMBRA
+				            	</div>
+					        </div>
+							<div class="collapse indent" id="treeant" data-parent="#treebutton">
+								<div class="card card-body"> 
+					            	ANTUMBRA
+				            	</div>
+					        </div>
+				        </div>
+		      		</div>
+
+		      		<div class="col-lg-4 col-md-4 col-sm-12" id="rockbutton" >
+						<h3 class="feature-title">Rock</h3>
+						<div class="btn-group btn-group-toggle d-flex">
+							<button class="btn btn-success w-100" type="button" data-toggle="collapse" data-target="#rockpen">LEFT</button>
+							 <button class="btn btn-danger w-100" type="button" data-toggle="collapse" data-target="#rockant">RIGHT</button>
+						</div>
+						<div class="accordian-group">
+							<div class="collapse indent" id="rockpen" data-parent="#rockbutton">
+								<div class="card card-body"> 
+					            	PENUMBRA
+				            	</div>
+					        </div>
+							<div class="collapse indent" id="rockant" data-parent="#rockbutton">
+								<div class="card card-body"> 
+					            	ANTUMBRA
+				            	</div>
+					        </div>
+				        </div>
+		      		</div>
+		    	</div>
+
+				</div>
+			</div>
+		</header>
+
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+		<script src="main.js"></script>
 
 	</body>
 </html>
