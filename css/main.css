@@ -14,11 +14,12 @@
 
 .overlay {
   position: absolute;
-  min-height: 80%;
+  min-height: 90%;
   min-width: 90%;
   left: 5%;
   top: 5%;
   background: rgba(255, 255, 255, 0.8);
+  overflow:auto ; /* minds inside and outside floatting elements, fine if no size given */
 }
 
 .description {
@@ -88,3 +89,12 @@ h1.cool {
 }
 
 .collapse.in { min-height: 50px;border: 1px solid blue; }
+
+.btn-xlg {
+    padding: 32px 32px;
+    font-size: 60px; //change this to your desired size
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
