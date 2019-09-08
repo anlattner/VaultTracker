@@ -1,133 +1,90 @@
-body {
-    margin: 60px auto;
-    width: 90%;
-}
-
-p {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
+.header {
+  background-image:url("http://bg2.cool/patterns/random/roses.gif");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-size: 50%;
 }
 
 .cool {
-  font-family: 'Heebo', 'Sans-Serif';
-  background-image:url("http://bg2.cool/patterns/random/roses.gif");
+  background-image:url(roses.gif);
   background-size: 50%;
   background-position: center
 }
 
-.container {
-    background-color: #ffffff;
-    padding: 10px;
-    overflow:hidden ; /* minds inside and outside floatting elements, fine if no size given */
+.overlay {
+  position: absolute;
+  min-height: 80%;
+  min-width: 90%;
+  left: 5%;
+  top: 5%;
+  background: rgba(255, 255, 255, 0.8);
 }
 
-.defaultdiv {
-    overflow:hidden ; /* minds inside and outside floatting elements, fine if no size given */
+.description {
+  left: 50%;
+  position: absolute;
+  top: 20%;
+  min-width: 80%;
+  transform: translate(-50%, -55%);
+  text-align: center;
+}
+.description h1 {
+  color: #6ab446;
+}
+.description p {
+  color: ##000000;
+  font-size: 1.3rem;
+  line-height: 1.5;
 }
 
-h1{
-  font-family: "Roboto", sans-serif;
-  margin: 10px;
-  text-align: left;
+.description button {
+  border:1px solid #6ab446;
+  background:#6ab446;
+  border-radius: 0;
+  color:#fff;
+}
+.description button:hover {
+  border:1px solid #fff;
+  background:#fff;
+  color:#000;
 }
 
-h1.cool {
-  font-family: "Kanit", sans-serif;
-  font-size: 10vw;
+.features {
+  margin: 4em auto;
+  padding: 1em;
+  position: relative;
+}
+.feature-title {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.features img {
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+}
+
+h1.cool { 
+  font-family: 'Kanit', sans-serif;
+  font-weight: 900;
+  font-size: 9vw;
+  margin: auto;
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
-  margin: auto;
-}
-
-h1.bold {
   color: black;
-  font-family: "Roboto", sans-serif;
-  font-size: 5vw;
-  font-weight: 900;
-  margin: 10px;
-  text-align: left;
-  margin: auto;
 }
 
-
-.btn-group .buttonleft {
-  background-color: #e7e7e7; color: black; /* Green */
-  border: 1px solid black;
-  padding: 15px 32px;
+.row {
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 32px;
-  cursor: pointer;
-  float: left;
-  width: 50%;
-  z-index: 1;
-  position: relative;
-  top: 0px;
-  left: 0px;
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  right: 5%;
 }
 
-.btn-group .buttonleft:hover {
-  background-color: #4CAF50;
-}
-
-.btn-group .buttonright {
-  background-color: #e7e7e7; color: black; /* Green */
-  border: 1px solid black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 32px;
-  cursor: pointer;
-  float: left;
-  width: 50%;
-  z-index: 1;
-  position: relative;
-  top: 0px;
-  left: 0px;
-}
-
-.btn-group .buttonright:hover {
-  background-color: #f44336;
-}
-
-.btn-group .button:not(:last-child) {
-  border-right: none; /* Prevent double borders */
-}
-
-.pen{
-  background-color: #4CAF50; /* Green */
-  border: 1px solid green;
-  padding: 32px 64px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-size: 32px;
-  width: 86.9%;
-  z-index: 2;
-  position: relative;
-  top: 0px;
-  left: 0px;
-}
-
-.ant{
-  background-color: #f44336; /* Red */
-  border: 1px solid green;
-  padding: 32px 64px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-size: 32px;
-  width: 86.9%;
-  z-index: 2;
-  position: relative;
-  top: 0px;
-  left: 0px;
-}
-
+.collapse.in { min-height: 50px;border: 1px solid blue; }
