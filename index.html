@@ -12,9 +12,9 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		-->
 
-		<!-- link to Bootstrap CDN (used for final hosting)
+		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		-->
+		
 
 		<script>
 		function stairsfunc(x) {
@@ -67,8 +67,6 @@
 
 		}
 		</script>
-		<!-- JQuery for Bootstrap -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
 	</head>
 	<body class="cool">
@@ -80,23 +78,29 @@
 				<div class="btn-group">
 					<button class = "buttonleft" onclick="stairsfunc('Left')">Left</button>
 					<button class = "buttonright" onclick="stairsfunc('Right')">Right</button>
-				</div>
+				</div> <!-- #stairs -->
 			</div>
 			<div id="trees">
 				<h1 class="bold">Trees</h1>
 				<div class="btn-group">
 					<button class = "buttonleft" onclick="treesfunc('Left')">Left</button>
 					<button class = "buttonright" onclick="treesfunc('Right')">Right</button>
-				</div>
+				</div> <!-- #trees -->
 			</div>
 			<div id = "rocks">
 				<h1 class="bold">Rocks</h1>
 				<div class="btn-group">
 					<button class = "buttonleft" onclick="rockfunc('Left')">Left</button>
 					<button class = "buttonright" onclick="rockfunc('Right')">Right</button>
-				</div>
+				</div> <!-- #rocks -->
 			</div>
 		</div><!-- /.container -->
+
+		<!-- JQuery for Bootstrap -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 	</body>
 </html>
 
