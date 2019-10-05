@@ -80,7 +80,7 @@ h1.cool {
   color: black;
 }
 
-p.desc {
+.desc {
   font-size: 8vw;
   line-height: 100%;
 }
