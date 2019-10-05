@@ -80,6 +80,10 @@ h1.cool {
   color: black;
 }
 
+.desc {
+  font-size: 2vw;
+}
+
 .row {
   text-align: center;
   position: absolute;
