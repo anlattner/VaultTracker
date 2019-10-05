@@ -82,6 +82,7 @@ h1.cool {
 
 .desc {
   font-size: 1vw;
+  line-height: 100%;
 }
 
 .row {
